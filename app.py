@@ -108,3 +108,6 @@ def home_redirect():
     start_arg = request.args.get("start")
     bot_url = f"https://telegram.me/File_store_Rushidhar_3Bot?start={start_arg}"
     return redirect(bot_url)
+
+if __name__ == "__main__":
+    app.run()
