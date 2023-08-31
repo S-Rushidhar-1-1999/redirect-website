@@ -31,8 +31,8 @@ raw_html = """
         
         .normal{
             margin: auto;
-            width: 65vw;
-            height: 75vh;
+            width: 400px;
+            height: 400px;
             background-color: #1e1e1e;
             padding: 20px;
         }
@@ -47,8 +47,8 @@ raw_html = """
         }
         
         .img {
-          width: 50vw;
-          height: 50vh;
+          width: 150px;
+          height: 150px;
           margin-top: 30px;
           margin-bottom: 30px;
         }
