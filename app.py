@@ -105,12 +105,7 @@ def js_enc_redirect():
 
 @app.route("/")
 def home_redirect():
-    try:
-        start_arg = request.args.get("start")
-        bot_url = f"https://telegram.me/File_store_Rushidhar_3Bot?start={start_arg}"
-        return redirect(bot_url)
-    except:
-        return "<h1>Site Running</h1>"
+    return "<h1>Site Running</h1>"
 
 if __name__ == "__main__":
     app.run()
