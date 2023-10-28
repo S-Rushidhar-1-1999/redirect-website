@@ -100,6 +100,17 @@ def js_enc_redirect():
         return "Invalid URL!"
 
 
+@app.route("/encoded")
+def js_enc_redirect():
+    try:
+        enc_start_arg = request.args.get("start")
+        start_arg = decode_string(enc_start_arg)
+        bot_url = start_arg
+        return render_template_string(raw_html, red_url=bot_url)
+    except BaseException:
+        return "Invalid URL!"
+
+
 # Normal Redirection
 
 
