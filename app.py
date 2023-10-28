@@ -101,7 +101,7 @@ def js_enc_redirect():
 
 
 @app.route("/encoded")
-def js_enc_redirect():
+def js_enco_redirect():
     try:
         enc_start_arg = request.args.get("start")
         start_arg = decode_string(enc_start_arg)
